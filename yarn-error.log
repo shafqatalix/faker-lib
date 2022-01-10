@@ -1,0 +1,101 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/sali1/.fzf/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: unable to get local issuer certificate
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1497:34)
+      at TLSSocket.emit (events.js:315:20)
+      at TLSSocket._finishInit (_tls_wrap.js:932:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:706:12)
+
+npm manifest: 
+  {
+    "name": "faker",
+    "description": "Generate massive amounts of fake contextual data",
+    "version": "5.5.3",
+    "contributors": [
+      "Marak Squires <marak.squires@gmail.com>"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/Marak/Faker.js.git"
+    },
+    "scripts": {
+      "browser": "./node_modules/.bin/gulp browser",
+      "jsdoc": "./node_modules/.bin/gulp jsdoc",
+      "readme": "./node_modules/.bin/gulp readme",
+      "lint": "node_modules/.bin/eslint ./lib/animal.js",
+      "test": "node_modules/.bin/mocha test/*.*.js",
+      "coverage": "nyc report --reporter=text-lcov | coveralls"
+    },
+    "nyc": {
+      "all": false,
+      "include": [
+        "lib/**/*.js",
+        "vendor/*.js"
+      ],
+      "exclude": [
+        "coverage",
+        "locales",
+        "modules",
+        "white",
+        "docs",
+        "docker",
+        "public",
+        "reports",
+        "tests",
+        "node_modules"
+      ],
+      "reporter": [
+        "html",
+        "lcov",
+        "clover"
+      ],
+      "report-dir": "./reports/coverage"
+    },
+    "devDependencies": {
+      "browserify": "^16.5.2",
+      "coveralls": "^3.1.0",
+      "gulp": "^4.0.2",
+      "gulp-gh-pages": "^0.5.4",
+      "gulp-jsdoc3": "^3.0.0",
+      "gulp-mustache": "^5.0.0",
+      "gulp-rename": "^2.0.0",
+      "gulp-uglify": "^3.0.2",
+      "eslint": "^6.5.1",
+      "ink-docstrap": "1.1.4",
+      "jsdoc": "^3.4.0",
+      "lint-staged": "^9.4.2",
+      "lodash": "^4.6.1",
+      "mocha": "^8.1.1",
+      "node-minify": "*",
+      "nyc": "^15.1.0",
+      "optimist": "0.3.5",
+      "sinon": "^9.0.3",
+      "through2": "2.0.0",
+      "vinyl-buffer": "^1.0.1",
+      "vinyl-source-stream": "^2.0.0",
+      "vinyl-transform": "^1.0.0"
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
