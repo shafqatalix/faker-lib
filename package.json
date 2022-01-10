@@ -1,16 +1,16 @@
 {
   "name": "faker-lib",
   "description": "Generate massive amounts of fake contextual data",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "contributors": [
     "Xalisys <xalsys@hotmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/xalisys/faker2.git"
+    "url": "https://github.com/xalisys/faker-lib.git"
   },
   "scripts": {
-    "browser": "./node_modules/.bin/gulp browser",
+    "browser": "./node_modules/.bin/gulp browser-package",
     "jsdoc": "./node_modules/.bin/gulp jsdoc",
     "readme": "./node_modules/.bin/gulp readme",
     "lint": "node_modules/.bin/eslint ./lib/animal.js",
